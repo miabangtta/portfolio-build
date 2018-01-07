@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" href="./assets/styles/app.min.css"/>
+    <link rel="icon" type="image/png" href="assets/images/content/fav_forest.png" sizes="16x16"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js">   </script>
+    <script src="./assets/scripts/bundle.js" defer="defer"></script>
+  </head>
+  <body>
+    <div class="spinner">
+      <div class="spinner__wrap">
+        <div class="spinner__percent">0%</div><img class="spinner__pic" src="assets/images/content/forest.svg" alt="spinner"/>
+      </div>
+    </div>
+    <section class="section index">
+      <div class="Background">
+        <canvas class="Background-canvas"></canvas>
+      </div>
+      <button class="button index__flip-button button_transparent" type="button">Авторизоваться</button>
+      <div class="index__wrap"> 
+        <div class="index__flipper">
+          <div class="index__block">
+            <div class="user">   
+              <div class="user__pic"><img class="user__pic-img" src="./assets/images/content/avatar1.jpg" alt="avatar"/></div>
+              <div class="user__info">
+                <div class="user__name">Мария Миронова</div>
+                <div class="user__data">Личный сайт веб-разработчика</div>
+              </div>
+            </div>
+            <ul class="socials__list">
+              <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/encrem" target="_blank">
+                  <svg class="socials__pic">
+                    <use xlink:href="./assets/images/icons/sprite.svg#fb"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="https://www.vk.com/miabangtta" target="_blank">
+                  <svg class="socials__pic">
+                    <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="https://www.github.com/miabangtta" target="_blank">
+                  <svg class="socials__pic">
+                    <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/in/mariya-mironova-15886587" target="_blank">
+                  <svg class="socials__pic">
+                    <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+            <div class="index__buttons"><a class="index__button button" href="https://miabangtta.github.io/portfolio-build/my-works.html">Мои работы</a><a class="index__button button" href="https://miabangtta.github.io/portfolio-build/about.html">Обо мне</a><a class="index__button button" href="https://miabangtta.github.io/portfolio-build/blog.html">Блог  </a></div>
+          </div>
+          <div class="form__block">
+            <form class="form" action="form" method="post">                                        
+              <div class="block-subtitle">Авторизуйтесь  </div>
+              <div class="form__auth">             
+                <div class="form__row">
+                  <label class="form__label-img" for="login">
+                    <svg class="form__label-icon">
+                      <use xlink:href="assets/images/icons/sprite.svg#login"></use>
+                    </svg>
+                  </label>
+                  <input class="form__input form__input-text form__input_round-right" name="login" id="login" placeholder="Логин" required="required"/>
+                </div>
+                <div class="form__row">
+                  <label class="form__label-img" for="password">
+                    <svg class="form__label-icon">
+                      <use xlink:href="assets/images/icons/sprite.svg#password"></use>
+                    </svg>
+                  </label>
+                  <input class="form__input form__input-text form__input_round-right" name="password" id="password" placeholder="Пароль" required="required"/>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <div class="form__row form__check">
+                  <label class="form__label" for="imahuman">
+                    <input class="form__input-checkbox" type="checkbox" id="imahuman" name="human" required="required"/><span class="form__input-square"><span class="form__input-check"></span></span><span class="form__label-text">Я человек</span>
+                  </label>
+                </div>
+                <div class="form__row">Вы точно не робот?</div>
+                <div class="form__row">
+                  <label class="form__label" for="notarobot">
+                    <input class="form__input form__input-radio" type="radio" id="notarobot" name="robot" required="required"/><span class="form__input-circle"><span class="form__input-inner"></span></span><span class="form__label-text">Да</span>
+                  </label>
+                  <label class="form__label margin_left_40" for="mayberobot">
+                    <input class="form__input form__input-radio" type="radio" id="mayberobot" name="robot"/><span class="form__input-circle"><span class="form__input-inner"></span></span><span class="form__label-text">Не уверен</span>
+                  </label>
+                </div>
+              </div>
+              <div class="index__buttons"><a class="button index__button-back" href="#">На главную</a>
+                <button class="index__button button" type="submit">Войти  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="index__message">
+          <div class="index__message-block"><a class="index__close"><span class="index__close-icon"></span></a>
+            <div class="index__error">Не все поля заполнены верно   </div>
+          </div>
+        </div>
+      </div>
+      <div class="index__copyright">© Мария Миронова | Создано&nbsp;с&nbsp;любовью&nbsp;в&nbsp;LoftSchool&nbsp;| 2017-2018</div>
+    </section>
+    <script async="async" defer="defer" src="./assets/scripts/water/water.js"></script>
+  </body>
+</html>
